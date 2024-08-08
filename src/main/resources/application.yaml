@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: bankbot-job
+  data:
+    mongodb:
+      uri: ${MONGO_URI:mongodb+srv://admin:root@cluster0.vwpz2pv.mongodb.net/bankbot_db?retryWrites=true&w=majority}
+logging:
+  level:
+    root: info
+  pattern:
+    console: "%d{yyyy-MM-dd} | %d{HH:mm:ss.SSS} | %-20.20thread | %highlight(%-5level) | %magenta(%-25.25logger{25}) | %m%n"
